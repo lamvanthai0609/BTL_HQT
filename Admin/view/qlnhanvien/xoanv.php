@@ -1,3 +1,8 @@
+
+
+
+
+
 <div class="panel-header panel-header-sm">
 </div>
 <div class="content" style="">
@@ -21,16 +26,24 @@
                 <th class="text-right"> EDIT</th>
               </thead>
               <tbody>
-                <tr>
-                  <td> 1 </td>
-                  <td> Dakota Rice</td>
-                  <td> 20/10/2000 </td>
-                  <td> Nam </td>
-                  <td> lamvanthai0609@gmail.com </td>
-                  <td> 0963326948 </td>
-                  <td> NV Kho </td>
-                  <td class="text-right"><button class="btn"><i class="fas fa-trash-alt"></i> Xóa</button></td>
-                </tr>
+                <?php
+                foreach ($data as $key) 
+                {
+                  ?>
+                    <tr>
+                      <td> <?php  echo $key['id_nv'] ?> </td>
+                      <td> <?php  echo $key['ten_nv'] ?> </td>
+                      <td> <?php  echo $key['ngaysinh_nv'] ?> </td>
+                      <td> <?php  echo $key['gioitinh_nv'] ?> </td>
+                      <td> <?php  echo $key['Email_nv'] ?> </td>
+                      <td> <?php  echo $key['SDT_nv'] ?> </td>
+                      <td> <?php  echo $key['chucvu_nv'] ?> </td>
+                      <td class="text-right"><button class="btn" onclick="xoa('<?php  echo $key['id_nv'] ?>')"><i class="fas fa-trash-alt"></i> Xóa</button></td>
+                    </tr>
+                  <?php
+                }
+                ?>
+                
               </tbody>
             </table>
           </div>
@@ -39,3 +52,27 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  function xoa(id)
+  {
+    if (confirm("Bạn có muốn xóa người dùng với id là " + id)) {
+      $.ajax({
+        type:"POST",
+        url:"Admin/model/QuanLyNhanVien/XoaNhanVien.php",
+        data:{
+
+          functionname:"xoanv",
+          id: id
+        },
+        success: function(result){
+          alert(result);
+          location.reload();
+        },
+        erro: function(req){
+          alert(req);
+        }
+      });
+    }  
+  }
+  
+</script>

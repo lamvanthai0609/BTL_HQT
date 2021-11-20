@@ -1,0 +1,7 @@
+20.11.2021 09:16:12 sql=[SELECT * FROM nhacungcap where display_ncc = 'block';] 
+20.11.2021 09:16:24 sql=[SELECT * FROM nhacungcap where display_ncc = 'none';] 
+20.11.2021 09:16:26 sql=[SELECT * FROM nhacungcap where display_ncc = 'block';] 
+20.11.2021 09:16:29 sql=[SELECT * FROM nhacungcap where display_ncc = 'none';] 
+20.11.2021 09:16:32 sql=[SELECT * FROM nhacungcap where display_ncc = 'block';] 
+20.11.2021 09:20:56 sql=[SELECT * FROM nhanvien where display_nv = 'block';] 
+20.11.2021 09:20:57 sql=[SELECT * FROM nhacungcap where display_ncc = 'block';] 

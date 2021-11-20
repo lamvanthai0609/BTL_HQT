@@ -13,22 +13,22 @@
                 <?php
                   if ($display == "block") {
                     ?>
-                      <option value="block" style="font-size: 13px;">Nhân Viên Đang Làm</option>
-                      <option value="none" style="font-size: 13px;">Nhân Viên Đã Nghỉ</option>
+                      <option value="block" style="font-size: 13px;">Nhà Cung Cấp Đang Giao Dịch</option>
+                      <option value="none" style="font-size: 13px;">Nhà Cung Cấp Ngưng Giao Dịch</option>
                     <?php
                   }
                   else
                   {
                     ?>
-                      <option value="none" style="font-size: 13px;">Nhân Viên Đã Nghỉ</option>
-                      <option value="block" style="font-size: 13px;">Nhân Viên Đang Làm</option>
+                      <option value="none" style="font-size: 13px;">Nhà Cung Cấp Ngưng Giao Dịch</option>
+                      <option value="block" style="font-size: 13px;">Nhà Cung Cấp Đang Giao Dịch</option>
                     <?php
                   }
                 ?>
                 
             </select>
           </h4>
-          <button id="themnv" style="float: right;" class="btn">Thêm nhân viên</button>
+          <button id="themnv" style="float: right;" class="btn">Thêm Nhà Cung Cấp</button>
         </div>
         <div class="container" style="margin-bottom: 20px;">
           <div class="row">
@@ -47,11 +47,10 @@
                 <thead class=" text-primary">
                   <th> ID </th>
                   <th> Name </th>
-                  <th> DATE </th>
-                  <th> SEX </th>
                   <th> Email </th>
                   <th> SDT </th>
-                  <th> CHUCVU </th>
+                  <th> DiaChi </th>
+                  <
                   <th class="text-right"> EDIT</th> 
                 </thead>
                 
@@ -65,14 +64,13 @@
 
                       ?>
                       <tr>
-                        <td> <?php  echo $key['id_nv'] ?> </td>
-                        <td> <?php  echo $key['ten_nv'] ?> </td>
-                        <td> <?php  echo $key['ngaysinh_nv'] ?> </td>
-                        <td> <?php  echo $key['gioitinh_nv'] ?> </td>
-                        <td> <?php  echo $key['Email_nv'] ?> </td>
-                        <td> <?php  echo $key['SDT_nv'] ?> </td>
-                        <td> <?php  echo $key['chucvu_nv'] ?> </td>
-                        <td class="text-right"><button onclick="suattnv('<?php  echo $key['id_nv'] ?>')" class="btn editnhanvien"><i class="fas fa-edit"></i> Edit</button></td>
+                        <td> <?php  echo $key['id_ncc'] ?> </td>
+                        <td> <?php  echo $key['ten_ncc'] ?> </td>
+                        <td> <?php  echo $key['Email_ncc'] ?> </td>
+                        <td> <?php  echo $key['SDT_ncc'] ?> </td>
+                        <td> <?php  echo $key['diachi_ncc'] ?> </td>
+          
+                        <td class="text-right"><button onclick="suattnv('<?php  echo $key['id_ncc'] ?>')" class="btn editnhanvien"><i class="fas fa-edit"></i> Edit</button></td>
                       </tr>
                       <?php
                     }
@@ -81,7 +79,7 @@
                   {
                     ?>
                     <tr style="text-align: center;">
-                      <td style="text-align: center;" rowspan="10" colspan="8">Không tìm thấy tên nhân viên</td>
+                      <td style="text-align: center;" rowspan="10" colspan="8">Không tìm thấy tên nhà cung cấp</td>
                     </tr>
 
                     <?php
@@ -103,13 +101,13 @@
 <script type="text/javascript">
 
   function suattnv(id_nv){
-        $.post('Admin/control/QuanLyNhanVien/SuaNhanVien.php',{'id_nv':id_nv},function(data){
+        $.post('Admin/control/QuanLyNhaCungCap/SuaNhaCungCap.php',{'id_nv':id_nv},function(data){
             $('#content').html(data);
         });
   }
   $(document).ready(function(){
       $('#themnv').click(function(){
-        $.post('Admin/control/QuanLyNhanVien/ThemNhanVien.php',{},function(data){
+        $.post('Admin/control/QuanLyNhaCungCap/ThemNhaCungCap.php',{},function(data){
             $('#content').html(data);
           });
       });
@@ -118,7 +116,7 @@
   $(document).ready(function(){
     $('#changenv').change(function(){
       const data = $("#changenv").val();
-      $.post('Admin/control/QuanLyNhanVien/QuanLyNhanVien.php',{display:data},function(data){
+      $.post('Admin/control/QuanLyNhaCungCap/DanhSachNhaCungCap.php',{display:data},function(data){
         $('#content').html(data);
       });
     });
@@ -126,7 +124,7 @@
   $(document).ready(function(){
     $('#searchnv').click(function(){
       const datasearch = $('#valuesearch').val();
-      $.post('Admin/control/QuanLyNhanVien/QuanLyNhanVien.php',{datasearch:datasearch},function(data){
+      $.post('Admin/control/QuanLyNhaCungCap/DanhSachNhaCungCap.php',{datasearch:datasearch},function(data){
         $('#content').html(data);
       });
     });

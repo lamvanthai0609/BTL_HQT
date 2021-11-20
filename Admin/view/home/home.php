@@ -4,7 +4,7 @@
 
 <head>
   <title>Admin</title>
-  <?php require_once('header.php'); ?>
+  <?php require_once('Admin/view/home/header.php'); ?>
 </head>
 <style type="text/css">
   ul{
@@ -27,7 +27,7 @@
           CT
         </a>
         <a href="#" class="simple-text logo-normal">
-          Creative Tim
+          Quản Lý
         </a>
       </div>
       <div class="sidebar-wrapper" id="sidebar-wrapper">
@@ -40,7 +40,7 @@
           </li>
           <li>
               <a href="#" data-toggle="collapse" data-target="#submenu" aria-expanded="false" aria-controls="submenu">
-                <i class="fas fa-user-friends"></i>
+                <i class="fas fa-user-shield"></i>
                 <p>Quản lý nhân viên</p>
               </a>
               <ul class="collapse" id="submenu" data-bs-parent="#menu">
@@ -56,26 +56,41 @@
                       <p>Xóa nhân viên</p>
                     </a>
                   </li>
+                  <li>
+                    <a href="#" id="formluongnv">
+                      <i class="fas fa-money-bill-wave"></i>
+                      <p>Lương nhân viên</p>
+                    </a>
+                  </li>
               </ul>
           </li>
           <li>
-            <a href="#">
+            <a href="#" id="formkhachhang">
               <i class="fas fa-user-friends"></i>
               <p>Quản lý khách hàng</p>
             </a>
           </li>
           <li>
-            <a href="#">
-              <i class="fas fa-user-shield"></i>
-              <p>Quản lý nhân viên</p>
-            </a>
+              <a href="#" data-toggle="collapse" data-target="#submenu1" aria-expanded="false" aria-controls="submenu1">
+                <i class="fas fa-suitcase"></i>
+                <p>quản lý nhà cung cấp</p>
+              </a>
+              <ul class="collapse" id="submenu1" data-bs-parent="#menu1">
+                  <li>
+                    <a href="#" id="formncc">
+                     <i class="fas fa-user-plus"></i>
+                      <p>Danh sách nhà cung cấp</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" id="formxoancc">
+                      <i class="fas fa-trash-alt"></i>
+                      <p>Xóa nhà cung cấp</p>
+                    </a>
+                  </li>
+              </ul>
           </li>
-          <li>
-            <a href="#">
-              <i class="fas fa-suitcase"></i>
-              <p>quản lý nhà cung cấp</p>
-            </a>
-          </li>
+          
           <li>
             <a href="#">
               <i class="fas fa-piggy-bank"></i>
@@ -433,7 +448,7 @@
       </div>
     </div>
   </div>
-  <?php require_once('footer.php'); ?>
+  <?php require_once('Admin/view/home/footer.php'); ?>
   <script>
     $(document).ready(function() {
       demo.initDashboardPageCharts();
@@ -442,19 +457,48 @@
 
     $(document).ready(function(){
       $('#formkh').click(function(){
-        $.post('qlnhanvien/danhsachnv.php',{},function(data){
+        $.post('Admin/control/QuanLyNhanVien/QuanLyNhanVien.php',{},function(data){
             $('#content').html(data);
         });
       });
     });
     $(document).ready(function(){
       $('#formxoakh').click(function(){
-        $.post('qlnhanvien/xoanv.php',{},function(data){
+        $.post('Admin/control/QuanLyNhanVien/XoaNhanVien.php',{},function(data){
+            $('#content').html(data);
+        });
+      });
+    });
+     $(document).ready(function(){
+      $('a#formkhachhang').click(function(){
+        $.post('Admin/control/QuanLyKhachHang/QuanLyKhachHang.php',{},function(data){
+            $('#content').html(data);
+        });
+      });
+    });
+     $(document).ready(function(){
+      $('#formluongnv').click(function(){
+        $.post('Admin/control/QuanLyNhanVien/LuongNhanVien.php',{},function(data){
             $('#content').html(data);
         });
       });
     });
     
+
+     $(document).ready(function(){
+      $('#formncc').click(function(){
+        $.post('Admin/control/QuanLyNhaCungCap/DanhSachNhaCungCap.php',{},function(data){
+            $('#content').html(data);
+        });
+      });
+    });
+    $(document).ready(function(){
+      $('#formxoancc').click(function(){
+        $.post('Admin/control/QuanLyNhaCungCap/XoaNhaCungCap.php',{},function(data){
+            $('#content').html(data);
+        });
+      });
+    });
 
 
   </script>
