@@ -38,7 +38,7 @@
                 
             </select>
           </h4>
-          <button id="themnv" style="float: right;" class="btn">Thêm Nhà Khuyến Mãi</button>
+          <button id="themnv" style="float: right;" class="btn">Thêm Khuyến Mãi</button>
         </div>
         <div class="container" style="margin-bottom: 20px;">
           <div class="row">

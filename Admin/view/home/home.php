@@ -33,7 +33,7 @@
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
           <li class="active ">
-            <a href="#">
+            <a href="#" id="home">
               <i class="now-ui-icons design_app"></i>
               <p>Thông Tin</p>
             </a>
@@ -102,12 +102,6 @@
                     <a href="#" id="formkm">
                      <i class="fas fa-user-plus"></i>
                       <p>Danh sách khuyến mãi</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" id="formxoakm">
-                      <i class="fas fa-trash-alt"></i>
-                      <p>Xóa khuyến mãi</p>
                     </a>
                   </li>
               </ul>
@@ -469,6 +463,11 @@
       demo.initDashboardPageCharts();
 
     });
+    $(document).ready(function(){
+      $('#home').click(function(){
+        location.reload();
+      });
+    });
 
     $(document).ready(function(){
       $('#formkh').click(function(){
@@ -522,13 +521,7 @@
         });
       });
     });
-    $(document).ready(function(){
-      $('#formxoakm').click(function(){
-        $.post('Admin/control/QuanLyKhuyenMai/XoaKhuyenMai.php',{},function(data){
-            $('#content').html(data);
-        });
-      }); 
-    });
+    
 
     setInterval(function(){
   
