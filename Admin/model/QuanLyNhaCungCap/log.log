@@ -1,0 +1,18 @@
+21.11.2021 01:59:58 <!-- sql=[update nhacungcap set display_ncc=n'none'  where id_ncc = '6'] --> 
+21.11.2021 02:39:37 sql=[SELECT * FROM nhacungcap where SDT_ncc = '0934344566' or Email_ncc = 'hakipettoy@gmail.com'] 
+21.11.2021 02:39:37 <!-- sql=[insert into nhacungcap (ten_ncc,Email_ncc,SDT_ncc,diachi_ncc,display_ncc) values ('NULL','hakipettoy@gmail.com','0934344566','77, Tôn Đức Thắng, Đống Đa, Hà Nội','block')] --> 
+21.11.2021 02:40:34 sql=[SELECT * FROM nhacungcap where SDT_ncc = '0934344566' or Email_ncc = 'hakipettoy@gmail.com'] 
+21.11.2021 02:43:17 sql=[SELECT * FROM nhacungcap where SDT_ncc = '0234345456' or Email_ncc = 'hillpet@gmail.com'] 
+21.11.2021 02:43:17 <!-- sql=[insert into nhacungcap (ten_ncc,Email_ncc,SDT_ncc,diachi_ncc,display_ncc) values ('Hill Pet','hillpet@gmail.com','0234345456','123 Nguyễn Trãi, Thanh Xuân, Hà Nội','block')] --> 
+21.11.2021 02:55:06 <!-- sql=[update nhanvien set chucvu_nv=n'NULL',diachi_nv=n'123 Nguyễn Trãi, Thanh Xuân, Hà Nội',display_nv=n'block'  where id_nv = ''] --> 
+21.11.2021 02:59:30 <!-- sql=[update nhacungcap set ten_ncc=n'Hill Pet Post',Email_ncc=n'hillpet@gmail.com',SDT_ncc=n'0234345456',diachi_ncc=n'123 Nguyễn Trãi, Thanh Xuân, Hà Nội',display_ncc=n'block'  where id_ncc = '8'] --> 
+21.11.2021 03:01:03 <!-- sql=[update nhacungcap set ten_ncc=n'Hill Pet',Email_ncc=n'hillpet@gmail.com',SDT_ncc=n'0234345456',diachi_ncc=n'123 Nguyễn Trãi, Thanh Xuân, Hà Nội',display_ncc=n'block'  where id_ncc = '8'] --> 
+21.11.2021 03:01:33 <!-- sql=[update nhacungcap set ten_ncc=n'Hill Pet Post',Email_ncc=n'hillpet@gmail.com',SDT_ncc=n'0234345456',diachi_ncc=n'123 Nguyễn Trãi, Thanh Xuân, Hà Nội',display_ncc=n'block'  where id_ncc = '8'] --> 
+21.11.2021 03:01:43 <!-- sql=[update nhacungcap set ten_ncc=n'Hill Pet',Email_ncc=n'hillpet@gmail.com',SDT_ncc=n'0234345456',diachi_ncc=n'123 Nguyễn Trãi, Thanh Xuân, Hà Nội',display_ncc=n'block'  where id_ncc = '8'] --> 
+21.11.2021 03:02:30 <!-- sql=[update nhacungcap set ten_ncc=n'Hill Pet Post',Email_ncc=n'hillpet@gmail.com',SDT_ncc=n'0234345456',diachi_ncc=n'123 Nguyễn Trãi, Thanh Xuân, Hà Nội',display_ncc=n'block'  where id_ncc = '8'] --> 
+21.11.2021 03:02:32 <!-- sql=[update nhacungcap set ten_ncc=n'Hill Pet Post',Email_ncc=n'hillpet@gmail.com',SDT_ncc=n'0234345456',diachi_ncc=n'123 Nguyễn Trãi, Thanh Xuân, Hà Nội',display_ncc=n'block'  where id_ncc = '8'] --> 
+21.11.2021 03:03:17 <!-- sql=[update nhacungcap set ten_ncc=n'Hill Pet',Email_ncc=n'hillpet@gmail.com',SDT_ncc=n'0234345456',diachi_ncc=n'123 Nguyễn Trãi, Thanh Xuân, Hà Nội',display_ncc=n'block'  where id_ncc = '8'] --> 
+21.11.2021 03:04:32 <!-- sql=[update nhacungcap set ten_ncc=n'Hill Pet Post',Email_ncc=n'hillpet@gmail.com',SDT_ncc=n'0234345456',diachi_ncc=n'123 Nguyễn Trãi, Thanh Xuân, Hà Nội',display_ncc=n'block'  where id_ncc = '8'] --> 
+21.11.2021 03:05:51 <!-- sql=[update nhacungcap set ten_ncc=n'Hill Pet',Email_ncc=n'hillpet@gmail.com',SDT_ncc=n'0234345456',diachi_ncc=n'123 Nguyễn Trãi, Thanh Xuân, Hà Nội',display_ncc=n'block'  where id_ncc = '8'] --> 
+21.11.2021 03:06:29 <!-- sql=[update nhacungcap set ten_ncc=n'Hill Pet Post',Email_ncc=n'hillpet@gmail.com',SDT_ncc=n'0234345456',diachi_ncc=n'123 Nguyễn Trãi, Thanh Xuân, Hà Nội',display_ncc=n'block'  where id_ncc = '8'] --> 
+21.11.2021 03:07:05 <!-- sql=[update nhacungcap set ten_ncc=n'Hill Pet',Email_ncc=n'hillpet@gmail.com',SDT_ncc=n'0234345456',diachi_ncc=n'123 Nguyễn Trãi, Thanh Xuân, Hà Nội',display_ncc=n'block'  where id_ncc = '8'] --> 

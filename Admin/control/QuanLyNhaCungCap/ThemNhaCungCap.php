@@ -3,6 +3,6 @@
 
 	//require_once "../../model/QuanLyNhanVien/ThemNhanVien.php";
 
-	require_once "../../view/qlnhanvien/themnv.php";
+	require_once "../../view/QuanLyNhaCungCap/ThemNhaCungCap.php";
 	
 ?>

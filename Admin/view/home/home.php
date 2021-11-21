@@ -91,11 +91,26 @@
               </ul>
           </li>
           
+      
           <li>
-            <a href="#">
-              <i class="fas fa-piggy-bank"></i>
-              <p>Quản lý khuyến mãi</p>
-            </a>
+              <a href="#" data-toggle="collapse" data-target="#submenu2" aria-expanded="false" aria-controls="submenu2">
+                <i class="fas fa-piggy-bank"></i>
+                <p>Quản lý khuyến mãi</p>
+              </a>
+              <ul class="collapse" id="submenu2" data-bs-parent="#menu2">
+                  <li>
+                    <a href="#" id="formkm">
+                     <i class="fas fa-user-plus"></i>
+                      <p>Danh sách khuyến mãi</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" id="formxoakm">
+                      <i class="fas fa-trash-alt"></i>
+                      <p>Xóa khuyến mãi</p>
+                    </a>
+                  </li>
+              </ul>
           </li>
           <li>
             <a href="#">
@@ -500,7 +515,31 @@
       });
     });
 
+    $(document).ready(function(){
+      $('#formkm').click(function(){
+        $.post('Admin/control/QuanLyKhuyenMai/DanhSachKhuyenMai.php',{},function(data){
+            $('#content').html(data);
+        });
+      });
+    });
+    $(document).ready(function(){
+      $('#formxoakm').click(function(){
+        $.post('Admin/control/QuanLyKhuyenMai/XoaKhuyenMai.php',{},function(data){
+            $('#content').html(data);
+        });
+      }); 
+    });
 
+    setInterval(function(){
+  
+      var d = new Date();
+
+      var datestring = d.getFullYear()  + "-" + (d.getMonth()+1) + "-" + d.getDate() + " " +
+      d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+
+      $.post('Admin/model/QuanLyKhuyenMai/DanhSachKhuyenMai.php',{functionname:datestring},function(data){});
+  
+    },1000);
   </script>
 </body>
 
