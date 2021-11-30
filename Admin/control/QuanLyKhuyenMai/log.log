@@ -130,3 +130,4 @@
 21.11.2021 03:47:36 sql=[SELECT * FROM khuyenmai where tinhtrang = 'Notstarted';] 
 21.11.2021 03:47:38 sql=[SELECT * FROM khuyenmai where tinhtrang = 'Happenning';] 
 21.11.2021 03:51:58 sql=[SELECT * FROM khuyenmai where tinhtrang = 'Notstarted';] 
+22.11.2021 09:06:42 sql=[SELECT * FROM khuyenmai where tinhtrang = 'Notstarted';] 
