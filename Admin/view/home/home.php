@@ -1,4 +1,14 @@
+<?php
 
+  if(isset($_POST["logout"]))
+  {
+      unset($_SESSION['id_nv']);
+      unset($_SESSION['chucvu']);
+      setcookie("username", "", time()-3600);
+      setcookie("password", "", time()-3600);
+      header("location:index.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -228,12 +238,17 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#pablo">
+               <form method="post">
+                  <button class="nav-link" name="logout" style="background-color: transparent;color: white;border: 0px;">
                   <i class="now-ui-icons users_single-02"></i>
+                </button>
+               </form>
+               <!--  <a class="nav-link" href="#pablo">
+                  
                   <p>
                     <span class="d-lg-none d-md-block">Account</span>
                   </p>
-                </a>
+                </a> -->
               </li>
             </ul>
           </div>

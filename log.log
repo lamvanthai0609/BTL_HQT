@@ -76,3 +76,4 @@
 10.12.2021 06:37:25 sql=[select * from sanpham where theloai_sp = 'dochoi' limit 4;] 
 10.12.2021 06:38:39 sql=[select * from sanpham where id_sp = 1] 
 10.12.2021 06:38:39 sql=[select * from sanpham where theloai_sp = 'dochoi' limit 4;] 
+10.12.2021 06:42:41 sql=[select * from login where username = 'thai' and password = 'c4ca4238a0b923820dcc509a6f75849b'] 
