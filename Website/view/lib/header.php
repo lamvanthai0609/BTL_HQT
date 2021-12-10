@@ -43,7 +43,7 @@
 			    <span class="icon-bar"></span>
 			    <span class="icon-bar"></span>                        
 			  </button>
-			  <a class="navbar-brand" href="#" style="color: #FFF;">WebSiteName</a>
+			  <a class="navbar-brand" href="#" style="color: #FFF;">KALI PET</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 			  	<ul class="nav navbar-nav">
@@ -54,8 +54,28 @@
 			  	</ul>
 				
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#" style="color: #FFF;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-					<li><a href="#" style="color: #FFF;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+					<?php 
+						if($id_kh != "")
+						{
+							?>
+							<li><a href="" style="color: #FFF;"><?php echo $info_kh['ten_kh']; ?></a></li>
+							<li><button type="submit" name="logout" style="color: #FFF;background-color: #FF6D69;margin-top: 12px;border-radius: 5px; border:1px solid white;">Logout</button></li>
+							<?php
+						}	
+						else
+						{
+							?>
+							<li><a href="http://localhost/BTL_HQT/?controller=login&action=login" style="color: #FFF;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+							<li><a href="http://localhost/BTL_HQT/?controller=login&action=login" style="color: #FFF;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+							<?php
+						}
+					?>
+
+					
+
+
+					
 				</ul>
 			</div>
 		</div>

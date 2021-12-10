@@ -6,7 +6,9 @@
 	    exit();
 	}
 
-
+	session_start();
+	// $_SESSION['id_nv'] = "NV1";
+	// $_SESSION['chucvu'] = "Admin";
 
 	$controller = isset($_GET['controller'])?$_GET['controller']:"home";
 	$action =  isset($_GET['action'])?$_GET['action']:"index";
