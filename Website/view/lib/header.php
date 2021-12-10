@@ -60,7 +60,10 @@
 						{
 							?>
 							<li><a href="" style="color: #FFF;"><?php echo $info_kh['ten_kh']; ?></a></li>
-							<li><button type="submit" name="logout" style="color: #FFF;background-color: #FF6D69;margin-top: 12px;border-radius: 5px; border:1px solid white;">Logout</button></li>
+							<li>
+							<form method="post">
+								<button type="submit" name="logout" style="color: #FFF;background-color: #FF6D69;margin-top: 12px;border-radius: 5px; border:1px solid white;">Logout</button>
+							</form></li>
 							<?php
 						}	
 						else
