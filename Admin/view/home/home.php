@@ -143,35 +143,29 @@
                 <li>
                     <a href="#" data-toggle="collapse" data-target="#submenu" aria-expanded="false" aria-controls="submenu">
                       <i class="fas fa-user-shield"></i>
-                      <p>Quản lý nhân viên</p>
+                      <p>Quản lý sản phẩm</p>
                     </a>
                     <ul class="collapse" id="submenu" data-bs-parent="#menu">
                         <li>
                           <a href="#" id="">
                            <i class="fas fa-user-plus"></i>
-                            <p>Danh sách nhân viên</p>
+                            <p>Thêm sản phẩm</p>
                           </a>
                         </li>
                         <li>
                           <a href="#" id="">
                             <i class="fas fa-trash-alt"></i>
-                            <p>Xóa nhân viên</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" id="">
-                            <i class="fas fa-money-bill-wave"></i>
-                            <p>Lương nhân viên</p>
+                            <p>Xóa sản phẩm</p>
                           </a>
                         </li>
                     </ul>
                 </li>
-                <li>
+                <!-- <li>
                   <a href="#">
                     <i class="fas fa-money-check-alt"></i>
-                    <p>Thống kê doanh thu</p>
+                    <p> kê doanh thu</p>
                   </a>
-                </li>
+                </li> -->
               </ul>
           <?php
         }

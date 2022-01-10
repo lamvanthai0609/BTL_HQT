@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>$title</title>
+	<title>KaLi PET</title>
 	<meta charset="utf-8">
 	<!-- <link rel="icon" type="images/png" href="#">  
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>

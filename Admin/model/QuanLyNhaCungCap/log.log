@@ -16,3 +16,4 @@
 21.11.2021 03:05:51 <!-- sql=[update nhacungcap set ten_ncc=n'Hill Pet',Email_ncc=n'hillpet@gmail.com',SDT_ncc=n'0234345456',diachi_ncc=n'123 Nguyễn Trãi, Thanh Xuân, Hà Nội',display_ncc=n'block'  where id_ncc = '8'] --> 
 21.11.2021 03:06:29 <!-- sql=[update nhacungcap set ten_ncc=n'Hill Pet Post',Email_ncc=n'hillpet@gmail.com',SDT_ncc=n'0234345456',diachi_ncc=n'123 Nguyễn Trãi, Thanh Xuân, Hà Nội',display_ncc=n'block'  where id_ncc = '8'] --> 
 21.11.2021 03:07:05 <!-- sql=[update nhacungcap set ten_ncc=n'Hill Pet',Email_ncc=n'hillpet@gmail.com',SDT_ncc=n'0234345456',diachi_ncc=n'123 Nguyễn Trãi, Thanh Xuân, Hà Nội',display_ncc=n'block'  where id_ncc = '8'] --> 
+10.12.2021 08:58:52 <!-- sql=[update nhacungcap set display_ncc=n'none'  where id_ncc = '8'] --> 
