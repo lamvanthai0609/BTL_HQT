@@ -117,3 +117,4 @@ function sql_str($val){
 	}
 	return "" . mysqli_real_escape_string($link,$val)  . "" ;
 }
+// đã xong
